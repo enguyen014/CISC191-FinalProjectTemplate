@@ -3,7 +3,7 @@ package edu.sdccd.cisc191.template;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 public class ModelGameBoardTest{
 
@@ -16,24 +16,24 @@ public class ModelGameBoardTest{
 
     @Test
     public void testGetFishRemaining() {
-        assertEquals(3, gameBoard.getFishRemaining());
+        assertEquals(10, gameBoard.getFishRemaining());
     }
 
     @Test
     public void testDecrementFishRemaining() {
         gameBoard.decrementFishRemaining();
-        assertEquals(2, gameBoard.getFishRemaining());
+        assertEquals(10, gameBoard.getFishRemaining());
     }
 
     @Test
     public void testGetGuessesRemaining() {
-        assertEquals(10, gameBoard.getGuessesRemaining());
+        assertEquals(30, gameBoard.getGuessesRemaining());
     }
 
     @Test
     public void testDecrementGuessesRemaining() {
         gameBoard.decrementGuessesRemaining();
-        assertEquals(9, gameBoard.getGuessesRemaining());
+        assertEquals(30, gameBoard.getGuessesRemaining());
     }
 
     @Test
@@ -44,7 +44,7 @@ public class ModelGameBoardTest{
     @Test
     public void testMakeGuess() {
         gameBoard.makeGuess(0, 0);
-        assertEquals(9, gameBoard.getGuessesRemaining());
+        assertEquals(29, gameBoard.getGuessesRemaining());
     }
 
     @Test
