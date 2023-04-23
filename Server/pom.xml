@@ -84,7 +84,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>edu.sdccd.cisc191.template.Server</mainClass>
+                                    <mainClass>edu.sdccd.cisc191.template.mod8_2</mainClass>
                                 </transformer>
                             </transformers>
                             <filters>
